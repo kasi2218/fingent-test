@@ -7,8 +7,8 @@
 
 -put the folder in your htdocs of your lampp
 
--please edit the files db_connect.php and db_create.php and give your database credentials like below.
-
+-please edit the files db_connect.php and db_create.php and give your database credentials like the example below.
+    
     $servername = "localhost";
     $username = "root";
     $password = "1234";
