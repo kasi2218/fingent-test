@@ -14,6 +14,7 @@
     $password = "1234";
 
 ##database creation##
+
 -after giving credentials you can call the file db_create like below example 
 
     http:// <your-virtual-localhost>or <lamp ip> /fingent-test/db_create.php 
