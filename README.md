@@ -27,4 +27,4 @@ your application is ready now.
     -please call http://<your-virtual-localhost>or <lamp ip>/fingent-test/ to get to index page. 
     -example: http://localhost:8080/fingent-test/
 
-    -please navigate to upload form from index page using "Upload file to enter employee details" link. 
+    -please navigate to upload form from index page using "<Upload file to enter employee details>" link. 
