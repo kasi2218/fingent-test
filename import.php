@@ -52,13 +52,13 @@ if(isset($_POST['import_data'])){
                 $dob = date('Y-m-d', strtotime(strip_tags($row[$dob_header])));
                 $doj = date('Y-m-d', strtotime(strip_tags($row[$doj_header])));
                 if(!empty($empCode)){
-                    $sql_query = "SELECT emp_id FROM emp WHERE emp_code = '".$empCode."'";
+                    $sql_query = "SELECT emp_id FROM employee_details WHERE emp_code = '".$empCode."'";
                     $resultset = mysqli_query($conn, $sql_query) or die("database error:". mysqli_error($conn));
                     if(mysqli_num_rows($resultset)) {            
-                        $sql_update = "UPDATE emp set emp_name='".$name."', emp_department='".$dep."', emp_dob='".$dob."', emp_doj='".$doj."' WHERE emp_code = '".$empCode."'";
+                        $sql_update = "UPDATE employee_details set emp_name='".$name."', emp_department='".$dep."', emp_dob='".$dob."', emp_doj='".$doj."' WHERE emp_code = '".$empCode."'";
                         mysqli_query($conn, $sql_update) or die("database error:". mysqli_error($conn));
                     }else{
-                        $query ="INSERT INTO emp (emp_name, emp_code, emp_department, emp_dob, emp_doj) VALUES ( '". $name."','".$empCode."','".$dep."','".$dob."','".$doj."' )";
+                        $query ="INSERT INTO employee_details (emp_name, emp_code, emp_department, emp_dob, emp_doj) VALUES ( '". $name."','".$empCode."','".$dep."','".$dob."','".$doj."' )";
                         mysqli_query($conn, $query) or die("database error asd:". mysqli_error($conn));
                     }
                 }        
