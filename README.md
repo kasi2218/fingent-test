@@ -21,7 +21,7 @@
     example: http://localhost:8080/fingent-test/db_create.php
     this will create db and table.
 
-    or you can directly run tables.sql file in your db.
+or you can directly run tables.sql file in your db.
 
 your application is ready now.
 
